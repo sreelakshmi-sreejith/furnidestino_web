@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Furnidestino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4ed;
+      color: #2f3e2f;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .header {
+      background-image: linear-gradient(rgba(182, 196, 160, 0.4), rgba(182, 196, 160, 0.4)), url('back11.jpg');
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      animation: slideUp 1s ease-in;
+      z-index: 2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      padding: 20px 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #f4f4ed;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #a3b18a;
+    }
+
+    .burger {
+      display: none;
+      font-size: 28px;
+      color: #f4f4ed;
+      cursor: pointer;
+    }
+
+    .gallery-section {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #2f3e2f;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .burger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(47, 62, 47, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .nav-links.show {
+        display: block;
+      }
+
+      .header h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/ic.jpg" alt="Logo" /></a>
+
+      <!-- Burger Icon -->
+      <div class="burger" id="burger">&#9776;</div>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html" class="active">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Our Interior Showcase</h1>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Designs That Inspire</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="img4.jpg" alt="Gallery Image 1"></div>
+      <div class="gallery-item"><img src="img3.jpg" alt="Gallery Image 2"></div>
+      <div class="gallery-item"><img src="img6.jpg" alt="Gallery Image 3"></div>
+      <div class="gallery-item"><img src="img2.jpg" alt="Gallery Image 4"></div>
+      <div class="gallery-item"><img src="img7.jpg" alt="Gallery Image 5"></div>
+      <div class="gallery-item"><img src="img8.jpg" alt="Gallery Image 6"></div>
+      <div class="gallery-item"><img src="img9.jpg" alt="Gallery Image 7"></div>
+      <div class="gallery-item"><img src="img10.jpg" alt="Gallery Image 8"></div>
+      <div class="gallery-item"><img src="img11.jpg" alt="Gallery Image 9"></div>
+      <div class="gallery-item"><img src="img13.jpg" alt="Gallery Image 10"></div>
+      <div class="gallery-item"><img src="img14.jpg" alt="Gallery Image 11"></div>
+      <div class="gallery-item"><img src="img15.jpg" alt="Gallery Image 12"></div>
+      <div class="gallery-item"><img src="img16.jpg" alt="Gallery Image 13"></div>
+      <div class="gallery-item"><img src="img17.jpg" alt="Gallery Image 14"></div>
+    </div>
+  </section>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

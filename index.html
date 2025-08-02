@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furnidestino</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome for star icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+ 
+
+  <!-- Header Section -->
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="iiii" alt="Logo" /></a>
+
+      <!-- Burger Icon -->
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        
+      </div>
+    </nav>
+
+    <div class="text-box">
+      <h1>Where your dreams come true..</h1>  
+      <p>
+        "Transform your space with our expert interior design services.
+        Let us bring your vision to life with stunning designs that reflect your personality and needs."
+      </p>
+      <a href="about.html" class="hero-btn">Visit us to know more</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="Services">
+    <h1>Our expertise</h1> 
+    <p>
+      At Furnidestino, we offer a range of interior design services tailored to transform your space into something extraordinary. Our offerings include:
+    </p>
+    <div class="row">
+      <div class="service-col">
+        <h3>Space Planning</h3>
+        <p>Thoughtful layouts that maximize space and functionality.</p>
+      </div>
+      <div class="service-col">
+        <h3>Color Consultation</h3>
+        <p>Expert advice on color palettes to enhance your environment.</p>
+      </div>
+      <div class="service-col">
+        <h3>Furniture Selection & Customization</h3>
+        <p>Find the perfect pieces or create custom designs.</p>
+      </div>
+      <div class="service-col">
+        <h3>Lighting Design</h3>
+        <p>Strategically placed lighting to create the ideal ambiance.</p>
+      </div>
+      <div class="service-col">
+        <h3>3D Renderings & Visualizations</h3>
+        <p>Bring your vision to life with digital previews.</p>
+      </div>
+      <div class="service-col">
+        <h3>Renovation & Remodeling</h3>
+        <p>Transform your space with our expert construction and renovation management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="works">
+    <section class="reviews">
+      <div class="container">
+        <h1>Our Customer Reviews</h1>
+        <p>Turning Dream Spaces Into Reality—See What Our Clients Say!</p>
+        
+        <div class="review-slider">
+          <div class="review-track">
+            <div class="review-card">
+              <p>"Absolutely love my new living space! The design exceeded my expectations. Highly recommend!"</p>
+            </div>
+            <div class="review-card">
+              <p>"Elegant, modern, and cozy—our home feels like a dream now! Thank you for your magic touch!"</p>
+            </div>
+            <div class="review-card">
+              <p>"Their attention to detail is unmatched! Every corner of my office now inspires creativity."</p>
+            </div>
+            <div class="review-card">
+              <p>"I’m in love with my new kitchen! The team understood my style and made it a reality."</p>
+            </div>
+            <div class="review-card">
+              <p>"Professional and creative! My new office space is both functional and stunning."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add Your Review Section -->
+    <section class="review-section">
+      <h2>Share Your Design Story</h2>
+      <form class="review-form" action="https://formspree.io/f/xgvyjbrb" method="POST">
+        <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5" required><label for="star5"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1"><i class="fas fa-star"></i></label>
+        </div>
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="review" rows="4" placeholder="Write your review here..." required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </section>
+<nav>
+  <a href="index.html"><img src="images/ic.jpg" alt="Logo" class="logo"></a>
+
+  
+ 
+
+ <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

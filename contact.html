@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Furnidestino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f4f4ed;
+      color: #2f3e2f;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: linear-gradient(rgba(182, 196, 160, 0.4), rgba(182, 196, 160, 0.4)), url('map.jpg');
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 2s ease-in;
+      cursor: pointer;
+    }
+
+    .header h1 {
+      font-size: 48px;
+      animation: slideUp 1s ease-in;
+      z-index: 2;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      padding: 20px 50px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      flex-wrap: wrap;
+    }
+
+    nav img {
+      height: 50px;
+    }
+
+    .burger {
+      display: none;
+      font-size: 28px;
+      color: #f4f4ed;
+      cursor: pointer;
+      z-index: 11;
+    }
+
+    .nav-links {
+      display: flex;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #f4f4ed;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #a3b18a;
+    }
+
+    @media(max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      .burger {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(47, 62, 47, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .nav-links.show {
+        display: block;
+      }
+
+      .header h1 {
+        font-size: 32px;
+      }
+    }
+
+    .contact-section {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="header" onclick="location.href='https://maps.app.goo.gl/mZ9rWyEGFzvLwUjT8';">
+    <nav>
+      <a href="index.html"><img src="iiii" alt="Logo" /></a>
+
+      <!-- Burger Icon -->
+      <div class="burger" id="burger">&#9776;</div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html" class="active">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+
+  
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-boxes">
+      <div class="contact-box">
+        <h3>📍 Address</h3>
+        <p>G-3102 JLN Stadium Kaloor , Kochi, Kerala</p>
+      </div>
+      <div class="contact-box">
+        <h3>📞 Phone</h3>
+        <p>+91-9633303656</p>
+      </div>
+      <div class="contact-box">
+        <h3>📧 Email</h3>
+        <p>sreejith348@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="map-clickable" onclick="window.open('https://maps.google.com?q=123+Design+Street+Kochi+Kerala')"></div>
+
+    <div class="callback-form">
+      
+  </section>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+ <section class="review-section">
+      <h2>Request  A Callback</h2>
+      <form class="review-form" action="https://formspree.io/f/mnnzbdgg" method="POST">
+        <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5" required><label for="star5"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star4" name="rating" value="4"><label for="star4"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star3" name="rating" value="3"><label for="star3"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star2" name="rating" value="2"><label for="star2"><i class="fas fa-star"></i></label>
+          <input type="radio" id="star1" name="rating" value="1"><label for="star1"><i class="fas fa-star"></i></label>
+        </div>
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="review" rows="4" placeholder="Contact Number" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </section>
+ 
+</body>
+</html>
