@@ -1,15 +1,15 @@
-# Furnidestino – Interior Design & Home Decor Website
+# Furnidestino – Official Business Website
 
-Furnidestino is a responsive front-end website designed for an interior design and home décor brand. The project focuses on creating a clean, modern, and user-friendly interface to showcase furniture collections, interior design services, and décor inspiration.
+Furnidestino is a responsive business website designed and developed for **Furnidestino**, an interior design and home décor company. The website serves as the company's digital presence, showcasing its services, portfolio, and brand identity through a clean and modern user interface.
 
-## Features
+## Key Features
 
-- Responsive design for desktop and mobile devices
-- Modern landing page with attractive UI
-- Product and service showcase
-- About Us and Contact sections
-- Smooth navigation and clean layout
-- Interactive user interface
+- Responsive design for desktop, tablet, and mobile devices
+- Professional landing page
+- Company and service information
+- Portfolio/Gallery section
+- Contact section for customer inquiries
+- Modern and intuitive user interface
 
 ## Technologies Used
 
@@ -17,34 +17,17 @@ Furnidestino is a responsive front-end website designed for an interior design a
 - CSS3
 - JavaScript
 
-## Project Structure
+## My Contributions
 
-```
-├── index.html
-├── css/
-├── js/
-├── images/
-└── assets/
-```
+- Designed the complete website layout and user interface
+- Developed the front-end implementation
+- Optimized the website for responsiveness across devices
+- Structured content to improve user experience and accessibility
 
-## Learning Outcomes
+## Purpose
 
-- Responsive web design
-- Front-end development
-- UI/UX design principles
-- Website layout structuring
-- CSS styling and animations
-
-## Future Improvements
-
-- Backend integration
-- User authentication
-- Shopping cart functionality
-- Online payment gateway
-- Admin dashboard
+The project was developed as the official website for Furnidestino to strengthen its online presence and provide customers with an accessible platform to learn about the company's services.
 
 ## Author
 
 **Sreelakshmi S S**
-
-GitHub: https://github.com/sreelakshmi-sreejith
